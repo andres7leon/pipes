@@ -7,7 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   
+  claveBool = true;
+
   nombre = 'Andres';
+
+  nombre2 ="anDres lEon toRres";
 
   arreglo = [1,2,3,4,5,6,7,8,9];
   
@@ -33,5 +37,9 @@ export class AppComponent {
   } );
 
   fecha = new Date();
+  
+  video = '2s6uzbj92h8';
+
+  clave = 'Andres123456';
 
 }

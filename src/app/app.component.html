@@ -98,6 +98,17 @@
                 <td> fecha'MMMM-DD' </td>
                 <td> {{ fecha | date:'MMMM-dd' }}</td>
             </tr>
+            <tr>
+                <td> {{nombre2}}</td>
+                <td> capitalice </td>
+                <td> {{ nombre2 | capitalizado }}</td>
+            </tr>
+            <tr>
+                <td> {{clave}}</td>
+                <td> clave **** <br> <button class="btn btn-outline-info btn-block" (click)="claveBool = !claveBool"> Ver/Ocultar clave</button></td>
+                <td> {{ clave | clave:claveBool }}</td>
+            </tr>
+
 
         </tbody>
     </table>
@@ -113,6 +124,10 @@
       {{heroe | json }}
     </pre>
 
+
+    <h4>youtube</h4>
+
+    <iframe width="710" height="399" [src]="video | domseguro:'https://www.youtube.com/embed/' " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
 
